@@ -37,7 +37,7 @@ public class TestBase {
 		
 		try{
 			prop=new Properties();
-			FileInputStream fis = new FileInputStream("/Users/sachin/Desktop/Eclipse/SweetyApp/src/main/java/com/qa/sweety/config/config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/config/config.properties");
 			prop.load(fis);
 		}
 		catch(FileNotFoundException e){
