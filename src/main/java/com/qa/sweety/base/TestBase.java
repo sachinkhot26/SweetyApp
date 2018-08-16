@@ -50,18 +50,18 @@ public class TestBase {
 	}
 	
 	public static void initialization(){
-		System.out.println(System.getProperty("user.dir")+"/drivers//geckodriver");
+		
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriverlin");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 			driver=new ChromeDriver();
 			System.out.println("Khalid Imam");
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
 			
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/drivers//geckodriver");
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/drivers/geckodriver");
 			driver=new FirefoxDriver();
 		}
 		
