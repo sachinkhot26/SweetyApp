@@ -56,6 +56,7 @@ public class TestBase {
 		if(browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 			driver=new ChromeDriver();
+			
 			System.out.println("Khalid Imam");
 			
 		}
