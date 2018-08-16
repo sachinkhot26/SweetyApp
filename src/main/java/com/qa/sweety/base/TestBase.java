@@ -54,7 +54,7 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriverlin");
 			driver=new ChromeDriver();
 			System.out.println("Khalid Imam");
 			
