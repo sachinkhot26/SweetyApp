@@ -21,7 +21,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//div[@class='alert alert-info fade in']")
 	WebElement message;
 	
-	@FindBy(xpath="//div[@class='aalert alert-warning fade in']")
+	@FindBy(xpath="//div[@class='alert alert-warning fade in']")
 	WebElement invalidMessage;
 	
 	public LoginPage(){

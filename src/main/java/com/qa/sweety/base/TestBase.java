@@ -57,7 +57,6 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver");
 			driver=new ChromeDriver();
 			
-			System.out.println("Khalid Imam");
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
@@ -79,7 +78,7 @@ public class TestBase {
 	@Test
 	public static String[][] excelReader() throws IOException {
 		
-			ExcelFile = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/data/sweetyapp.xlsx");
+			ExcelFile = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/data/sweetyappp.xlsx");
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(prop.getProperty("sheetName"));
 			int totalRows=ExcelWSheet.getLastRowNum();

@@ -6,9 +6,9 @@
       <class name="com.qa.sweety.tests.LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest"/>
-          <include name="pageTitleTest"/>
+          <include name="invalidEmail"/>
           <include name="tearDown"/>
+          <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- com.qa.sweety.tests.LoginPageTest -->
     </classes>

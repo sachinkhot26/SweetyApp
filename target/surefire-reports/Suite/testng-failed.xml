@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.sweety.extentreport.ExtentReportListener"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.qa.sweety.tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="invalidEmailTest"/>
+          <include name="invalidPasswordTest"/>
+        </methods>
+      </class> <!-- com.qa.sweety.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
