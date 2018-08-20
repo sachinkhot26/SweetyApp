@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="68557" started-at="2018-08-19T14:21:15Z" finished-at="2018-08-19T14:22:24Z">
+  <suite name="Suite" duration-ms="57615" started-at="2018-08-20T04:53:09Z" finished-at="2018-08-20T04:54:07Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="43116" started-at="2018-08-19T14:21:15Z" finished-at="2018-08-19T14:21:58Z">
+    <test name="Test1" duration-ms="34747" started-at="2018-08-20T04:53:09Z" finished-at="2018-08-20T04:53:44Z">
       <class name="com.qa.sweety.tests.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="7008" started-at="2018-08-19T19:51:15Z" finished-at="2018-08-19T19:51:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="6004" started-at="2018-08-20T10:23:10Z" finished-at="2018-08-20T10:23:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pageTitleTest()[pri:1, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="pageTitleTest" duration-ms="3015" started-at="2018-08-19T19:51:22Z" finished-at="2018-08-19T19:51:25Z">
+        <test-method status="PASS" signature="pageTitleTest()[pri:1, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="pageTitleTest" duration-ms="3039" started-at="2018-08-20T10:23:16Z" finished-at="2018-08-20T10:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="92" started-at="2018-08-19T19:51:25Z" finished-at="2018-08-19T19:51:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="95" started-at="2018-08-20T10:23:19Z" finished-at="2018-08-20T10:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="5413" started-at="2018-08-19T19:51:25Z" finished-at="2018-08-19T19:51:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="3505" started-at="2018-08-20T10:23:19Z" finished-at="2018-08-20T10:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:2, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="validLoginTest" duration-ms="4328" started-at="2018-08-19T19:51:31Z" finished-at="2018-08-19T19:51:35Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:2, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="validLoginTest" duration-ms="5468" started-at="2018-08-20T10:23:22Z" finished-at="2018-08-20T10:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="97" started-at="2018-08-19T19:51:35Z" finished-at="2018-08-19T19:51:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="94" started-at="2018-08-20T10:23:28Z" finished-at="2018-08-20T10:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="5885" started-at="2018-08-19T19:51:35Z" finished-at="2018-08-19T19:51:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="4612" started-at="2018-08-20T10:23:28Z" finished-at="2018-08-20T10:23:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="invalidPasswordTest()[pri:3, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="invalidPasswordTest" duration-ms="3986" started-at="2018-08-19T19:51:41Z" finished-at="2018-08-19T19:51:45Z">
+        <test-method status="FAIL" signature="invalidPasswordTest()[pri:3, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="invalidPasswordTest" duration-ms="4327" started-at="2018-08-20T10:23:32Z" finished-at="2018-08-20T10:23:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Signed in successfully.] but found [Invalid email or password.]]]>
@@ -83,15 +83,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="95" started-at="2018-08-19T19:51:45Z" finished-at="2018-08-19T19:51:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="97" started-at="2018-08-20T10:23:37Z" finished-at="2018-08-20T10:23:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="9577" started-at="2018-08-19T19:51:45Z" finished-at="2018-08-19T19:51:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="setUp" is-config="true" duration-ms="3664" started-at="2018-08-20T10:23:37Z" finished-at="2018-08-20T10:23:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="invalidEmailTest()[pri:4, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="invalidEmailTest" duration-ms="3473" started-at="2018-08-19T19:51:55Z" finished-at="2018-08-19T19:51:58Z">
+        <test-method status="FAIL" signature="invalidEmailTest()[pri:4, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="invalidEmailTest" duration-ms="3669" started-at="2018-08-20T10:23:40Z" finished-at="2018-08-20T10:23:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Signed in successfully.] but found [You need to sign in or sign up before continuing.]]]>
@@ -139,39 +139,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="95" started-at="2018-08-19T19:51:58Z" finished-at="2018-08-19T19:51:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.LoginPageTest@6aaa5eb0]" name="tearDown" is-config="true" duration-ms="105" started-at="2018-08-20T10:23:44Z" finished-at="2018-08-20T10:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.sweety.tests.LoginPageTest -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="11435" started-at="2018-08-19T14:21:59Z" finished-at="2018-08-19T14:22:10Z">
+    <test name="Test2" duration-ms="9880" started-at="2018-08-20T04:53:44Z" finished-at="2018-08-20T04:53:54Z">
       <class name="com.qa.sweety.tests.EntryPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="setUp" is-config="true" duration-ms="4268" started-at="2018-08-19T19:51:59Z" finished-at="2018-08-19T19:52:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="setUp" is-config="true" duration-ms="3232" started-at="2018-08-20T10:23:44Z" finished-at="2018-08-20T10:23:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyEntry()[pri:1, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="verifyEntry" duration-ms="7004" started-at="2018-08-19T19:52:03Z" finished-at="2018-08-19T19:52:10Z">
+        <test-method status="PASS" signature="verifyEntry()[pri:1, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="verifyEntry" duration-ms="6487" started-at="2018-08-20T10:23:48Z" finished-at="2018-08-20T10:23:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEntry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="tearDown" is-config="true" duration-ms="161" started-at="2018-08-19T19:52:10Z" finished-at="2018-08-19T19:52:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.EntryPageTest@1324409e]" name="tearDown" is-config="true" duration-ms="159" started-at="2018-08-20T10:23:54Z" finished-at="2018-08-20T10:23:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.sweety.tests.EntryPageTest -->
     </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="13812" started-at="2018-08-19T14:22:10Z" finished-at="2018-08-19T14:22:24Z">
+    <test name="Test3" duration-ms="12887" started-at="2018-08-20T04:53:54Z" finished-at="2018-08-20T04:54:07Z">
       <class name="com.qa.sweety.tests.ReportPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="setUp" is-config="true" duration-ms="4879" started-at="2018-08-19T19:52:10Z" finished-at="2018-08-19T19:52:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="setUp" is-config="true" duration-ms="3604" started-at="2018-08-20T10:23:54Z" finished-at="2018-08-20T10:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyReport()[pri:1, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="verifyReport" duration-ms="8831" started-at="2018-08-19T19:52:15Z" finished-at="2018-08-19T19:52:24Z">
+        <test-method status="PASS" signature="verifyReport()[pri:1, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="verifyReport" duration-ms="9005" started-at="2018-08-20T10:23:58Z" finished-at="2018-08-20T10:24:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="tearDown" is-config="true" duration-ms="101" started-at="2018-08-19T19:52:24Z" finished-at="2018-08-19T19:52:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.sweety.tests.ReportPageTest@1e67b872]" name="tearDown" is-config="true" duration-ms="276" started-at="2018-08-20T10:24:07Z" finished-at="2018-08-20T10:24:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

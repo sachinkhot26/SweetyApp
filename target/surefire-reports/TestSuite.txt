@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 70.555 sec <<< FAILURE! - in TestSuite
-invalidPasswordTest(com.qa.sweety.tests.LoginPageTest)  Time elapsed: 3.995 sec  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 59.72 sec <<< FAILURE! - in TestSuite
+invalidPasswordTest(com.qa.sweety.tests.LoginPageTest)  Time elapsed: 4.336 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Signed in successfully.] but found [Invalid email or password.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
@@ -12,7 +12,7 @@ java.lang.AssertionError: expected [Signed in successfully.] but found [Invalid 
 	at org.testng.Assert.assertEquals(Assert.java:199)
 	at com.qa.sweety.tests.LoginPageTest.invalidPasswordTest(LoginPageTest.java:81)
 
-invalidEmailTest(com.qa.sweety.tests.LoginPageTest)  Time elapsed: 3.475 sec  <<< FAILURE!
+invalidEmailTest(com.qa.sweety.tests.LoginPageTest)  Time elapsed: 3.67 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Signed in successfully.] but found [You need to sign in or sign up before continuing.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
