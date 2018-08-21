@@ -75,27 +75,27 @@ public class TestBase {
 		
 		
 	}
-	@Test
-	public static String[][] excelReader() throws IOException {
+	//@Test
+	public static void excelReader(int rownum) throws IOException {
 		
-			ExcelFile = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/data/sweetyappp.xlsx");
+			ExcelFile = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/data/sweetyapp.xlsx");
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(prop.getProperty("sheetName"));
-			int totalRows=ExcelWSheet.getLastRowNum();
+			int totalRows=ExcelWSheet.getLastRowNum()-ExcelWSheet.getFirstRowNum();
 			int totalCols=ExcelWSheet.getRow(0).getLastCellNum();
 //			System.out.println("rows=="+totalRows);
 //			System.out.println("colss=="+totalCols);
-			data=new String[totalRows][totalCols];
+			data=new String[rownum][totalCols];
 			
 			
-			for(int i=0;i<totalRows;i++) {
+			for(int i=0;i<1;i++) {
 				for(int j=0;j<totalCols;j++) {
-					 data[i][j]=ExcelWSheet.getRow(i+1).getCell(j).getStringCellValue();
+					 data[i][j]=ExcelWSheet.getRow(rownum).getCell(j).getStringCellValue();
 					
 				}
 			}
 			
-			return data;
+		
 		
 	}
 	
@@ -103,7 +103,7 @@ public class TestBase {
 		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		System.out.println(currentDir);
+		
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 	

@@ -3,10 +3,8 @@ package com.qa.sweety.tests;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.Assert;
-import org.openqa.selenium.NoSuchElementException;
-
+import java.io.IOException;
 import com.qa.sweety.base.TestBase;
 import com.qa.sweety.pages.EntryPage;
 import com.qa.sweety.pages.LoginPage;
@@ -65,25 +63,36 @@ public class LoginPageTest extends TestBase{
 //		Thread.sleep(3000);
 //		
 //	}
+	
+
 	@Test(priority=2)
 	
 	public void validLoginTest() throws Exception {
-		loginPage.login("sachinkhot26@gmail.com","codetheoryio");
+		excelReader(1);
+		String email= data[0][0];
+		String password=data[0][1];
+		loginPage.login(email,password);
 		String actualValidMessage=loginPage.getMessage();
 		expectedValidMessage="Signed in successfully.";													
 		Assert.assertEquals(actualValidMessage, expectedValidMessage);
 	}
 	
 	@Test(priority=3)
-	public void invalidPasswordTest() throws InterruptedException {
-		loginPage.login("sachinkhot26@gmail.com","codetheoryio123");
+	public void invalidPasswordTest() throws InterruptedException, Exception {
+		excelReader(2);
+		String email= data[0][0];
+		String password=data[0][1];
+		loginPage.login(email,password);;
 		String actualInvalidValidMessage=loginPage.getInvalidMessage();
 		Assert.assertEquals(actualInvalidValidMessage, expectedValidMessage);
 		
 	}
 	@Test(priority=4)
-	public void invalidEmailTest() throws InterruptedException {
-		loginPage.login("sachinkhot26@@gmail.com","codetheoryio123");
+	public void invalidEmailTest() throws InterruptedException, IOException {
+		excelReader(3);
+		String email= data[0][0];
+		String password=data[0][1];
+		loginPage.login(email,password);
 		String actualInvalidValidMessage=loginPage.getInvalidMessage();
 		Assert.assertEquals(actualInvalidValidMessage, expectedValidMessage);
 		
@@ -96,14 +105,6 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	
-	 @DataProvider
-	 
-	    public Object[][] Authentication() throws Exception{
-	 
-	         Object[][] loginData = excelReader();
-	 
-	         return (loginData);
-	 
-		}
+
 
 }
