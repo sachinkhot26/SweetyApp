@@ -4,7 +4,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
+import org.testng.ITestResult;
+
 import java.io.IOException;
+import java.util.HashMap;
+
 import com.qa.sweety.base.TestBase;
 import com.qa.sweety.pages.EntryPage;
 import com.qa.sweety.pages.LoginPage;
@@ -33,7 +37,7 @@ public class LoginPageTest extends TestBase{
 	    loginPage=new LoginPage();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled=false)
 	
 	public void pageTitleTest() throws InterruptedException {
 		
@@ -64,10 +68,23 @@ public class LoginPageTest extends TestBase{
 //		
 //	}
 	
+	@Test
+	public  void invalidEmailTest() throws Exception {
+		String methodName = new Object() {}
+	      .getClass()
+	      .getEnclosingMethod()
+	      .getName();
+	      excelReaderNew(methodName);
+		HashMap<Object, Object>credentials=excelReaderNew(methodName);
+		loginPage.login(credentials.get("email").toString(),credentials.get("password").toString());
+		
+	}
+	
 
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	
 	public void validLoginTest() throws Exception {
+		
 		excelReader(1);
 		String email= data[0][0];
 		String password=data[0][1];
@@ -77,7 +94,7 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(actualValidMessage, expectedValidMessage);
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=false)
 	public void invalidPasswordTest() throws InterruptedException, Exception {
 		excelReader(2);
 		String email= data[0][0];
@@ -87,8 +104,8 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(actualInvalidValidMessage, expectedValidMessage);
 		
 	}
-	@Test(priority=4)
-	public void invalidEmailTest() throws InterruptedException, IOException {
+	@Test(priority=4,enabled=false)
+	public void invalidEmailTest12() throws InterruptedException, IOException {
 		excelReader(3);
 		String email= data[0][0];
 		String password=data[0][1];

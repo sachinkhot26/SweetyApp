@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -31,7 +32,7 @@ public class TestBase {
 	private static XSSFCell Cell;
 	private static XSSFRow Row;
 	public static String data[][]=null;
-	
+	public static HashMap<Object, Object>hmap;
 	
 	public TestBase(){
 		
@@ -97,6 +98,39 @@ public class TestBase {
 			
 		
 		
+	}
+	@Test
+	
+	public static HashMap<Object, Object> excelReaderNew(String testcaseName) throws Exception
+	{
+		
+		ExcelFile = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/sweety/data/sweetyappp.xlsx");
+		ExcelWBook = new XSSFWorkbook(ExcelFile);
+		ExcelWSheet = ExcelWBook.getSheet(prop.getProperty("sheetName"));
+		int totalRows=ExcelWSheet.getLastRowNum()-ExcelWSheet.getFirstRowNum();
+		int totalCols=ExcelWSheet.getRow(0).getLastCellNum();
+		
+		
+		for(int i=1; i<totalRows+1;i++) {
+			
+			String testcase= ExcelWSheet.getRow(i).getCell(0).getStringCellValue();
+			
+			
+			if(testcase.equals(testcaseName)) {
+				
+			    	hmap=new HashMap<Object, Object>();
+					hmap.put("email",ExcelWSheet.getRow(i).getCell(1).getStringCellValue());
+					hmap.put("password",ExcelWSheet.getRow(i).getCell(2).getStringCellValue() );
+					
+			
+			}
+			else {
+				continue;
+			}
+			
+			
+		}
+		return hmap;
 	}
 	
 	public static void screenShot() throws Exception {
